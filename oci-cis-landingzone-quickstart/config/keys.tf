@@ -34,8 +34,8 @@ module "lz_vault" {
     compartment_id    = local.security_compartment_id #module.lz_compartments.compartments[local.security_compartment.key].id
     vault_name        = local.vault_name
     vault_type        = local.vault_type
-    defined_tags      = local.vault_defined_tags
-    freeform_tags     = local.vault_freeform_tags
+    #defined_tags      = local.vault_defined_tags
+    #freeform_tags     = local.vault_freeform_tags
 }
 
 

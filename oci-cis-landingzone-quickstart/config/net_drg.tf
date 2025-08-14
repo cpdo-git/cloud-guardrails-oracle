@@ -20,8 +20,8 @@ module "lz_drg" {
   compartment_id = local.network_compartment_id #module.lz_compartments.compartments[local.network_compartment.key].id
   service_label  = var.service_label
   is_create_drg  = (var.is_vcn_onprem_connected == true || var.hub_spoke_architecture) && var.existing_drg_id == ""
-  defined_tags   = local.drg_defined_tags
-  freeform_tags  = local.drg_freeform_tags
+  #defined_tags   = local.drg_defined_tags
+  #freeform_tags  = local.drg_freeform_tags
 }
 
 resource "null_resource" "slow_down_drg" {

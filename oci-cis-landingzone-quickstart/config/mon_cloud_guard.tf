@@ -25,8 +25,8 @@ module "lz_cloud_guard" {
   reporting_region      = local.regions_map[local.home_region_key]
   status                = var.cloud_guard_configuration_status == "ENABLE" ? "ENABLED" : "DISABLED"
   self_manage_resources = false
-  defined_tags          = local.cloud_guard_target_defined_tags
-  freeform_tags         = local.cloud_guard_target_freeform_tags
+  #defined_tags          = local.cloud_guard_target_defined_tags
+  #freeform_tags         = local.cloud_guard_target_freeform_tags
   default_target        = { name : local.cg_target_name, type : "COMPARTMENT", id : var.tenancy_ocid }
 }
 

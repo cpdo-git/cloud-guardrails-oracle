@@ -5,16 +5,16 @@
 ##### The commented variable assignments are for variables with a default value in variables.tf. For overriding them, uncomment the variable and provide an appropriate value.
 
 ### Tenancy Connectivity variables
-tenancy_ocid         = "<tenancy_ocid>"
-user_ocid            = "<user_ocid>"
-fingerprint          = "<user_api_key_fingerprint>"
-private_key_path     = "<path_to_user_private_key_file>"
+tenancy_ocid         = "ocid1.tenancy.oc1..aaaaaaaa3nxurj6kbslxwhrnswlho7hrthen6ygjqsl63qvspuxcjtfgv6hq"
+user_ocid            = "ocid1.user.oc1..aaaaaaaarvgkmycpgye5h5k3byf7yxwndadw4ha7quo5qpfsalfsovb2q2wa"
+fingerprint          = "d9:9b:3c:0e:ce:74:e0:89:1c:89:18:ca:1e:0d:13:9e"
+private_key_path     = "/home/Gianni1078/.oci/oci_api_key.pem"
 private_key_password = ""
 
 
 ### Environment/IAM variables
-region        = "<tenancy_region>"
-service_label = "<a_label_to_prefix_resource_names_with>"
+region        = "ca-montreal-1"
+service_label = "GR-"
 # extend_landing_zone_to_new_region       = false
 # use_enclosing_compartment               = false
 # existing_enclosing_compartment_ocid     = "<ocid>" # Compartment OCID where Landing Zone compartments are created.
@@ -60,8 +60,8 @@ service_label = "<a_label_to_prefix_resource_names_with>"
 # public_dst_cidrs         = ["<cidr_1>","<cidr_2>","...","<cidr_n>"] # external IP ranges in CIDR notation for HTTPS outbound connections.
 
 ### Notifications variables
-network_admin_email_endpoints    = ["<email1>","<email2>","...","<emailn>"] # list of email addresses for all network related notifications.
-security_admin_email_endpoints   = ["<email1>","<e-mail2>","...","<emailn>"] # list of email addresses for all security related notifications.
+network_admin_email_endpoints    = ["gianni10788@csis-scrs.gc.ca"] # list of email addresses for all network related notifications.
+security_admin_email_endpoints   = ["gianni10788@csis-scrs.gc.ca"] # list of email addresses for all security related notifications.
 #compute_admin_email_endpoints    = ["<email1>","<e-mail2>","...","<emailn>"] # list of email addresses for all compute related notifications.
 #storage_admin_email_endpoints    = ["<email1>","<e-mail2>","...","<emailn>"] # list of email addresses for all storage related notifications.
 #database_admin_email_endpoints   = ["<email1>","<e-mail2>","...","<emailn>"] # list of email addresses for all database related notifications.
