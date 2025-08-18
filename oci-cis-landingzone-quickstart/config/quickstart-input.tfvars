@@ -14,7 +14,7 @@ private_key_password = ""
 
 ### Environment/IAM variables
 region        = "ca-montreal-1"
-service_label = "GR-"
+service_label = "GR"
 # extend_landing_zone_to_new_region       = false
 # use_enclosing_compartment               = false
 # existing_enclosing_compartment_ocid     = "<ocid>" # Compartment OCID where Landing Zone compartments are created.
